@@ -30,8 +30,9 @@ public class RButton_Listener implements ActionListener {
                 Register register_parent = (Register)context;
                 register_parent.register();
                 break;
-            case 3://goto login
-            case 4: //(goto login)
+            case 3: //goto login
+            case 4:
+            case 104:
                 vessel.remove(0);
                 vessel.add(new Login());
                 frame.pack();
@@ -39,6 +40,22 @@ public class RButton_Listener implements ActionListener {
             case 201: //GOTO History
                 vessel.remove(0);
                 vessel.add(new History());
+                frame.pack();
+                return;
+            case 107: //GOTO home
+            case 110:
+                vessel.remove(0);
+                vessel.add(new Home());
+                frame.pack();
+                return;
+            case 100:
+                vessel.remove(0);
+                vessel.add(new CargarProducto());
+                frame.pack();
+                return;
+            case 101:
+                vessel.remove(0);
+                vessel.add(new CargarCliente());
                 frame.pack();
                 return;
             default:

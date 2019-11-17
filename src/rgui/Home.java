@@ -22,8 +22,8 @@ public class Home extends JPanel {
 
         //region Declaration of components to use
         title = new JLabel("Chino Shop");
-        cargar_client = new RButton("Cargar Cliente",100);
-        cargar_product = new RButton("Cargar Producto",101);
+        cargar_client = new RButton("Cargar Cliente",101);
+        cargar_product = new RButton("Cargar Producto",100);
         edit_client = new RButton("Editar Cliente",102);
         edit_product = new RButton("Editar Producto",103);
         back_button = new RButton("Back",104);
