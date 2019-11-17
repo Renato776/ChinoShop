@@ -31,4 +31,17 @@ public class Product extends RData {
     public int getHash() {
         return 0;
     }
+
+    @Override
+    public String string_field(int field) {
+        if(field == 0)return name;
+        if(field == 1)return category;
+        if(field == 2)return  code.get_key();
+        return code.get_key();
+    }
+
+    @Override
+    public double numeric_field(int field) {
+        return price;
+    }
 }

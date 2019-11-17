@@ -33,4 +33,14 @@ public class Category extends RData {
     public int getHash() {
         return 0;
     }
+
+    @Override
+    public String string_field(int field) {
+        return name;
+    }
+
+    @Override
+    public double numeric_field(int field) {
+        return field;
+    }
 }

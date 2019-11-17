@@ -150,6 +150,79 @@ public class RList {
             current.next = new_node;
         }
     }
+
+    public void string_sorted_insert(RData data, int field){
+        //This method only works for inserting into a sorted list
+        Node new_node = new Node(data);
+        if(head == null){
+            head = tail = new_node;
+            return;
+        }
+        if (head.data.string_field(field).compareTo(data.string_field(field)) >= 0)
+        {
+            head.prev = new_node;
+            new_node.next = head;
+            head = new_node;
+        }
+        else
+        {
+            Node current = head;
+            /* Locate the node before the point of insertion */
+            while (current.next != null)
+            {
+                if(current.next.data.string_field(field).compareTo(new_node.data.string_field(field)) < 0){
+                    current = current.next;
+                }else{
+                    break;
+                }
+            }
+            new_node.next = current.next;
+            if(current.next==null){
+                tail = new_node;
+            }else{
+                current.next.prev = new_node;
+            }
+            new_node.prev = current;
+            current.next = new_node;
+        }
+    }
+
+    public void numeric_sorted_insert(RData data, int field){
+        //This method only works for inserting into a sorted list
+        Node new_node = new Node(data);
+        if(head == null){
+            head = tail = new_node;
+            return;
+        }
+        if (head.data.numeric_field(field) >= (data.numeric_field(field)))
+        {
+            head.prev = new_node;
+            new_node.next = head;
+            head = new_node;
+        }
+        else
+        {
+            Node current = head;
+            /* Locate the node before the point of insertion */
+            while (current.next != null)
+            {
+                if(current.next.data.numeric_field(field) < (new_node.data.numeric_field(field))  ){
+                    current = current.next;
+                }else{
+                    break;
+                }
+            }
+            new_node.next = current.next;
+            if(current.next==null){
+                tail = new_node;
+            }else{
+                current.next.prev = new_node;
+            }
+            new_node.prev = current;
+            current.next = new_node;
+        }
+    }
+
     public void add(RData data){ //Adds the node to the end of the list
         Node new_node = new Node(data);
         if(head == null){
@@ -169,14 +242,54 @@ public class RList {
         }
         return i;
     }
-    public void order(){
+    public void string_order(int field){
         var lista_aux = new RList();
         var aux = head;
         while(aux != null){
-            lista_aux.sorted_insert(aux.data);
+            lista_aux.string_sorted_insert(aux.data,field);
             aux = aux.next;
         }
         head = lista_aux.head;
         tail = lista_aux.tail;
+    }
+    public void numeric_order(int field){
+        var lista_aux = new RList();
+        var aux = head;
+        while(aux != null){
+            lista_aux.numeric_sorted_insert(aux.data,field);
+            aux = aux.next;
+        }
+        head = lista_aux.head;
+        tail = lista_aux.tail;
+    }
+    public RList filter(int field, double filter){
+        //Returns all elements with numeric field <= filter.
+        RList res = new RList();
+        Node aux = head;
+        while(aux!=null){
+            if(aux.data.numeric_field(field)<=filter)res.numeric_sorted_insert(aux.data,field);
+            aux = aux.next;
+        }
+        return res;
+    }
+    public RList filter_by_name(int field, String filter){
+        //Returns all elements with numeric field <= filter.
+        RList res = new RList();
+        Node aux = head;
+        while(aux!=null){
+            if(aux.data.string_field(field).toLowerCase().contains(filter.toLowerCase()))res.string_sorted_insert(aux.data,field);
+            aux = aux.next;
+        }
+        return res;
+    }
+    public void reverse(){
+        RList res = new RList();
+        Node aux = this.tail;
+        while(aux!=null){
+            res.add(aux.data);
+            aux = aux.prev;
+        }
+        this.head = res.head;
+        this.tail = res.tail;
     }
 }

@@ -38,4 +38,14 @@ public class Code extends RData{
     public int getHash() {
         return 0;
     }
+
+    @Override
+    public String string_field(int field) {
+        return code;
+    }
+
+    @Override
+    public double numeric_field(int field) {
+        return field;
+    }
 }

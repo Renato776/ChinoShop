@@ -21,6 +21,17 @@ public class Usuario extends RData {
         }
         return aux;
     }
+
+    @Override
+    public String string_field(int field) {
+        return name;
+    }
+
+    @Override
+    public double numeric_field(int field) {
+        return field;
+    }
+
     @Override
     public String get_visualization() {
         return "Name: "+name+"; Pass: "+password;
