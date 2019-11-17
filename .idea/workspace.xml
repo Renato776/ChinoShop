@@ -2,23 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26a096d0-3c34-4878-b006-30660d225f31" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/edd/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/edd/RData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/edd/RHashTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/edd/RList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/edd/Usuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rgui/History.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rgui/Home.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rgui/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rgui/Printing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rgui/RButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rgui/RButton_Listener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rgui/Register.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rgui/Report_Display.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rgui/Shop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/edd/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/edd/Code.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/edd/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/edd/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/edd/RList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/RList.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +34,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../EDDDrive" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -85,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573970512586</updated>
-      <workItem from="1573970516450" duration="1376000" />
+      <workItem from="1573970516450" duration="2669000" />
     </task>
     <servers />
   </component>

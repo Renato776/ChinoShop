@@ -33,6 +33,15 @@ public class RList {
         new_node.next = head;
         head = new_node;
     }
+    public String get_formatted_list_of_elements(){
+        Node aux = head;
+        String res = "";
+        while (aux!=null){
+            res += aux.data.get_visualization()+"<br>";
+            aux = aux.next;
+        }
+        return res;
+    }
     public int get_index(String key){
         var aux = head;
         int i = 0;
