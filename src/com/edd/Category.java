@@ -8,7 +8,7 @@ public class Category extends RData {
         products = new RList();
         Main.categories.add(this);
     }
-    public Category register(String name){
+    public static Category register(String name){
         if(Main.categories.search(name)!=null){
             //Another category already exists with this name.
             //Cannot register category.

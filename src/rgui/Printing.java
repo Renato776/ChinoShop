@@ -14,6 +14,11 @@ public class Printing {
         JOptionPane.showMessageDialog(null, i, "Alert", JOptionPane.INFORMATION_MESSAGE);
     }
     public static String[] request_data(String[][] data){
+        /*
+        data is a matrix because:
+        data - List of
+            name - placeHolder
+         */
         int i = 0;
         JPanel myPanel = new JPanel();
         GroupLayout layout = new GroupLayout(myPanel);

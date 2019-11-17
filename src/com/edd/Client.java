@@ -9,12 +9,17 @@ public class Client extends RData {
 
     public Client(String name){
         this.name = name;
-        likes = new RList();
+        likes = null;
         last_name = "";
         address = "";
         NIT = "";
     }
-
+    public static Client register(String name){
+        if(Main.clients.search(name)!=null){
+            return null;
+        }
+        return new Client(name);
+    }
     @Override
     public String get_visualization() {
         return "Nombre: "+name+" <br>" +

@@ -12,10 +12,13 @@ public class Main {
     public static Usuario usuario = null;
     public static RList usuarios = new RList();
     public static RList categories = new RList();
+    public static RList products = new RList();
+    public static RList clients = new RList();
     public static void main(String[] args) {
 	// write your code here
     Usuario admin = new Usuario("admin","admin");
         usuarios.add(admin);
+        new Category("otros");
         frame = new JFrame();
         frame.setTitle("EDD");
         var vessel = frame.getContentPane();

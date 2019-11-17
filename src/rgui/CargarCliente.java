@@ -1,5 +1,10 @@
 package rgui;
 
+import com.edd.Category;
+import com.edd.Client;
+import com.edd.Main;
+import com.edd.RList;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -30,7 +35,7 @@ public class CargarCliente extends JPanel {
 
     public CargarCliente(){
 
-        setBackground(Color.magenta);
+        setBackground(Color.yellow);
         GroupLayout layout = new GroupLayout(this);
         this.setLayout(layout);
         layout.setAutoCreateGaps(true);
@@ -54,7 +59,7 @@ public class CargarCliente extends JPanel {
         Likes = getAvailableCategories();
         back_button = new RButton("Back",107);
         cargar_button = new RButton("Cargar",106);
-        add_category_button = new RButton("Agregar Categoria",108);
+        add_category_button = new RButton("Agregar Categoria",105);
         back_button.addActionListener(new RButton_Listener(this));
         cargar_button.addActionListener(new RButton_Listener(this));
         add_category_button.addActionListener(new RButton_Listener(this));
@@ -123,6 +128,45 @@ public class CargarCliente extends JPanel {
 //endregion
     }
     public JPanel getAvailableCategories(){
-        return new JPanel();
+        JPanel res =  new JPanel();
+        var aux = Main.categories.head;
+        while(aux != null){
+            JCheckBox checkBox = new JCheckBox(aux.data.get_key(),false);
+            res.add(checkBox);
+            aux = aux.next;
+        }
+        return res;
+    }
+
+    public void add_category() {
+        String[] data = Printing.request_data(new String[][]{{"Categoria:","otros"}});
+        if(data==null)return;
+        String category_name = data[0];
+        if(Category.register(category_name)!=null){
+            Printing.alert("Nueva Categoria Ingresada con exito!");
+            Main.frame.getContentPane().remove(0);
+            Main.frame.getContentPane().add(new CargarCliente());
+            Main.frame.pack();
+        }else{
+            Printing.alert("Ya existe una Categoria con este nombre.");
+        }
+    }
+
+    public void cargar() {
+        var options = Likes.getComponents();
+        RList true_likes = new RList();
+        for ( var c:options) {
+            if(((JCheckBox)c).isSelected()){
+                true_likes.sorted_insert(Main.categories.search(((JCheckBox) c).getText()));
+            }
+        }
+        Client client = Client.register(name.getText());
+        if(client == null){Printing.alert("Ya existe un cliente con este nombre");return;}
+        client.NIT = NIT.getText();
+        client.address = address.getText();
+        client.last_name = last_name.getText();
+        client.likes = true_likes;
+        Main.clients.sorted_insert(client);
+        Printing.alert("Cliente registrado con exito!");
     }
 }

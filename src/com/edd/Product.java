@@ -11,6 +11,12 @@ public class Product extends RData {
         this.category = category;
         this.code = new Code();
     }
+    public Product(Code c, String name, double price, String category){
+        this.name = name;
+        this.price = price;
+        this.category = category;
+        this.code = c;
+    }
     public Product(String code, String name, double price, String category){
         this.name = name;
         this.price = price;

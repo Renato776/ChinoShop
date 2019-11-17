@@ -1,5 +1,10 @@
 package rgui;
 
+import com.edd.Category;
+import com.edd.Code;
+import com.edd.Main;
+import com.edd.Product;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -14,13 +19,14 @@ public class CargarProducto extends JPanel {
     JTextField name;
     JTextField price;
     JTextField code;
-    JList category;
+    JPanel category;
     JButton cargar_button;
     JButton back_button;
+    String selected_category;
 
     public CargarProducto (){
-
-        setBackground(Color.magenta);
+        selected_category = "";
+        setBackground(Color.yellow);
         GroupLayout layout = new GroupLayout(this);
         this.setLayout(layout);
         layout.setAutoCreateGaps(true);
@@ -101,7 +107,47 @@ public class CargarProducto extends JPanel {
         );
 //endregion
     }
-    public JList getAvailableCategories(){
-        return new JList();
+    public JPanel getAvailableCategories(){
+        JPanel res = new JPanel();
+        ButtonGroup group = new ButtonGroup();
+        var aux = Main.categories.head;
+        while(aux!=null){
+            JRadioButton jRadioButton = new JRadioButton(aux.data.get_key());
+            jRadioButton.addActionListener(new RButton_Listener(this));
+            group.add(jRadioButton);
+            res.add(jRadioButton);
+            aux = aux.next;
+        }
+        return res;
+    }
+    public void cargar(){
+        if(selected_category == ""){
+            Printing.alert("Debes seleccionar alguna categoria. Si no te gusta ninguna, puedes seleccionar \"otros\".");
+            return;
+        }
+        String n = name.getText();
+        double p = 0;
+        try{
+            p = Double.parseDouble(price.getText());
+        }catch (Exception ex){
+            Printing.alert("Debes ingresar un precio numerico valido. No debes utilizar simbolos monetarios.");
+            return;
+        }
+        Code c = null;
+        if(code.getText().equals("")){
+            c = new Code();
+        }else{
+            c = new Code(code.getText());
+        }
+        //Alright build the new Product!
+        Product product = new Product(c,n,p,selected_category);
+        Main.products.sorted_insert(product);
+        var cat = Main.categories.search(selected_category);
+        Category category1 = (Category)cat;
+        category1.products.sorted_insert(product);
+        Printing.alert("Producto ingresado con exito!");
+    }
+    public void select_category(String category){
+        selected_category = category;
     }
 }
