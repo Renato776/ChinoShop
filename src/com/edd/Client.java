@@ -9,6 +9,7 @@ public class Client extends RData {
     public String last_name;
     public String address;
     public String NIT;
+    public RList history;
 
     public Client(String name){
         this.name = name;
@@ -16,6 +17,7 @@ public class Client extends RData {
         last_name = "";
         address = "";
         NIT = "";
+        history = new RList();
     }
     public static Client register(String name){
         if(Main.clients.search(name)!=null){

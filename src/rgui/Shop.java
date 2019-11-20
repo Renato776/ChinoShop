@@ -4,6 +4,9 @@ import com.edd.*;
 
 import javax.swing.*;
 import java.awt.*;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.zip.DeflaterOutputStream;
 
 import static javax.swing.GroupLayout.Alignment.CENTER;
 
@@ -196,7 +199,44 @@ public class Shop extends JPanel {
     }
 
     public void facturar() {
-        Printing.alert("Not implemented yet!");
+        Product product = (Product)(Main.products.filter_by_name(3,display.get_element_data(selected_product).get_key())).head.data;
+        var data = Printing.request_data(new String[][]{{"Codigo: ",product.code.get_key()},{"Nombre del producto: ",product.name},{"Cliente: ",""},{"Precio: ",""+product.price},{"Efectivo: ",""}});
+        if(data == null)return;
+        if(Main.clients.search(data[2])==null){
+            Printing.alert("Cliente no encontrado: "+data[1]);
+            Printing.alert("Se registrara la compra anonima.");
+        }
+        Client customer = (Client)Main.clients.search(data[2]);
+        if(Main.products.search(data[0])==null){
+            Printing.alert("Producto no encontrado");
+            Printing.alert("Operacion cancelada");
+            return;
+        }
+        double price,effective;
+        try{
+            price = Double.parseDouble(data[3]);
+            effective = Double.parseDouble(data[4]);
+            if((price < 0 )||(effective < 0))throw new Exception();
+        } catch (Exception ex){
+            Printing.alert("Precio o efectivo no validos.");
+            Printing.alert("No utilice simbolos monetarios.");
+            Printing.alert("Operacion cancelada.");
+            return;
+        }
+        if(price>effective){
+            Printing.alert("El efectivo recibido: "+effective+" No es suficiente para realizar la compra.");
+            Printing.alert("Precio total del producto: "+price);
+            Printing.alert("Operacion cancelada.");
+            return;
+        }
+        double cambio = effective - price;
+        Printing.alert("Cambio: "+cambio);
+        Printing.alert("Compra realizada con exito!");
+        var formatter=  new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        var timestamp = new Date();
+        var date = formatter.format(timestamp);
+        customer.history.push(new RVisualization(date+"  Compra de producto: "+product.name+" Codigo: "+product.code.get_key()+"" +
+                " Efectivo: "+effective+" Cambio recibido: "+cambio));
     }
 
     public void ordenarPorCliente() {

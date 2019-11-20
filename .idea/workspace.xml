@@ -2,35 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26a096d0-3c34-4878-b006-30660d225f31" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/edd/RVisualization.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/RList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/RList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/rgui/CargarCliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/rgui/CargarCliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/rgui/CargarProducto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/rgui/CargarProducto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/rgui/EditarCliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/rgui/EditarCliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/rgui/EditarProducto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/rgui/EditarProducto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/rgui/Home.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/rgui/Home.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/rgui/RButton_Listener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/rgui/RButton_Listener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/rgui/RDisplayList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/rgui/RDisplayList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/rgui/REditableFields.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/rgui/REditableFields.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/rgui/RIcon_Handler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/rgui/RIcon_Handler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/rgui/RLabel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/rgui/RLabel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Client.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/rgui/Shop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/rgui/Shop.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/edd/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/edd/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/edd/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/edd/RList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/RList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rgui/CargarCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rgui/CargarCliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rgui/CargarProducto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rgui/CargarProducto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rgui/EditarCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rgui/EditarCliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rgui/EditarProducto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rgui/EditarProducto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rgui/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rgui/Home.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rgui/RButton_Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rgui/RButton_Listener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rgui/RDisplayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rgui/RDisplayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rgui/REditableFields.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rgui/REditableFields.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rgui/RIcon_Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rgui/RIcon_Handler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rgui/RLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rgui/RLabel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rgui/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rgui/Shop.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -109,7 +85,7 @@
       <workItem from="1574010494962" duration="636000" />
       <workItem from="1574028012371" duration="131000" />
       <workItem from="1574208834664" duration="189000" />
-      <workItem from="1574209889426" duration="19267000" />
+      <workItem from="1574209889426" duration="20990000" />
     </task>
     <servers />
   </component>
@@ -142,7 +118,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/rgui/Shop.java</url>
-          <line>202</line>
+          <line>242</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>

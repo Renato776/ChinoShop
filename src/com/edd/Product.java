@@ -64,6 +64,7 @@ public class Product extends RData {
         if(field == 0)return name;
         if(field == 1)return category;
         if(field == 2)return  code.get_key();
+        if(field == 3)return  get_visualization();
         return code.get_key();
     }
 
