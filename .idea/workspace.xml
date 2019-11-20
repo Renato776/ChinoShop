@@ -3,11 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="26a096d0-3c34-4878-b006-30660d225f31" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/rgui/Shop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/rgui/Shop.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/edd/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/edd/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rgui/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rgui/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/rgui/EditarCliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/rgui/EditarCliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/rgui/History.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/rgui/History.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/rgui/RButton_Listener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/rgui/RButton_Listener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/edd/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rgui/EditarCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rgui/EditarCliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rgui/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rgui/History.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rgui/RButton_Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rgui/RButton_Listener.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +88,7 @@
       <workItem from="1574010494962" duration="636000" />
       <workItem from="1574028012371" duration="131000" />
       <workItem from="1574208834664" duration="189000" />
-      <workItem from="1574209889426" duration="20990000" />
+      <workItem from="1574209889426" duration="21839000" />
     </task>
     <servers />
   </component>

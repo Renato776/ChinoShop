@@ -74,12 +74,13 @@ public class RButton_Listener implements ActionListener {
             case 106:
                 ((CargarCliente)context).cargar();
                 return;
-            case 101:
+            case 101: //GOto cargar cliente
                 vessel.remove(0);
                 vessel.add(new CargarCliente());
                 frame.pack();
                 return;
-            case 102:
+            case 102: //GOTO editar cliente
+            case 501:
                 vessel.remove(0);
                 vessel.add(new EditarCliente());
                 frame.pack();
@@ -116,7 +117,11 @@ public class RButton_Listener implements ActionListener {
             case 409:
                 ((Shop)context).buscarProducto();
                 return;
-
+            case 500:
+                if(Main.selectedClient==null)return;
+                vessel.remove(0);
+                vessel.add(new History());
+                frame.pack();
             default:
                 System.out.println("Not sure, which action was pressed...");
         }

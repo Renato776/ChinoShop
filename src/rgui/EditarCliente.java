@@ -18,6 +18,7 @@ public class EditarCliente extends JPanel {
     public REditableFields detalles;
     public RButton back_button;
     public RButton edit_button;
+    public RButton history_button;
     public int selected_client;
     public EditarCliente(){
         selected_client = 0;
@@ -25,7 +26,7 @@ public class EditarCliente extends JPanel {
         this.setLayout(layout);
         layout.setAutoCreateGaps(true);
         layout.setAutoCreateContainerGaps(true);
-
+        Main.selectedClient = null;
         //region Initialization of components to use
         title = new JLabel("Chino Shop");
         clients_text = new JLabel("Clients:");
@@ -40,6 +41,9 @@ public class EditarCliente extends JPanel {
         back_button.addActionListener(new RButton_Listener(this));
         edit_button = new RButton("Editar",301);
         edit_button.addActionListener(new RButton_Listener(this));
+        history_button = new RButton("Historial",500);
+        history_button.addActionListener(new RButton_Listener(this));
+        layout.linkSize(back_button,edit_button,history_button);
         //endregion
 
         //region set Horizontal grouping:
@@ -56,8 +60,9 @@ public class EditarCliente extends JPanel {
                                         .addComponent(detalles)
                                 )
                         )
-                        .addComponent(back_button)
                         .addComponent(edit_button)
+                        .addComponent(history_button)
+                        .addComponent(back_button)
                 )
         );
         //endregion
@@ -75,14 +80,16 @@ public class EditarCliente extends JPanel {
                                 .addComponent(detalles)
                         )
                 )
-                .addComponent(back_button)
                 .addComponent(edit_button)
+                .addComponent(history_button)
+                .addComponent(back_button)
         );
         //endregion
     }
     public void setSelectedClient(int index){
         selected_client = index;
         detalles.replace_data(clients.get_element_data(index));
+        Main.selectedClient = (Client)clients.get_element_data(index);
         clients.color_element(index);
     }
     public void edit(){

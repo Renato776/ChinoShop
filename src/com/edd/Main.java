@@ -14,6 +14,7 @@ public class Main {
     public static RList categories = new RList();
     public static RList products = new RList();
     public static RList clients = new RList();
+    public static Client selectedClient = null;
 
     public static void load_sample_data(){
         //region load users:
