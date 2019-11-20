@@ -282,6 +282,15 @@ public class RList {
         }
         return res;
     }
+    public RList to_visual(){
+        Node aux = this.head;
+        RList list = new RList();
+        while(aux!=null){
+            list.add(new RVisualization(aux.data.get_visualization()));
+            aux = aux.next;
+        }
+        return list;
+    }
     public void reverse(){
         RList res = new RList();
         Node aux = this.tail;

@@ -30,7 +30,7 @@ public class EditarProducto extends JPanel {
         title = new JLabel("Chino Shop");
         products_text = new JLabel("Productos:");
         detalles_text  = new JLabel("Detalles:");
-        products = RDisplayList.getInstance(Main.products,210,500,this);
+        products = RDisplayList.getInstance(Main.products,130,500,this,false);
         if(Main.products.head!=null){
             detalles = new REditableFields(Main.products.head.data);
         }else{
@@ -38,7 +38,7 @@ public class EditarProducto extends JPanel {
         }
         back_button = new RButton("Back",110);
         back_button.addActionListener(new RButton_Listener(this));
-        edit_button = new RButton("Editar",202);
+        edit_button = new RButton("Editar",302);
         edit_button.addActionListener(new RButton_Listener(this));
         //endregion
 

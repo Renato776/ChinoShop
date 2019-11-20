@@ -13,18 +13,36 @@ public class Product extends RData {
         this.price = price;
         this.category = category;
         this.code = new Code();
+        if(Main.categories.search(this.category)!=null){
+            if(((Category)Main.categories.search(this.category)).products.search(this.code.get_key())==null){
+                //Hasn't been registered yet.
+                ((Category)Main.categories.search(this.category)).products.sorted_insert(this);
+            }
+        }
     }
     public Product(Code c, String name, double price, String category){
         this.name = name;
         this.price = price;
         this.category = category;
         this.code = c;
+        if(Main.categories.search(this.category)!=null){
+            if(((Category)Main.categories.search(this.category)).products.search(this.code.get_key())==null){
+                //Hasn't been registered yet.
+                ((Category)Main.categories.search(this.category)).products.sorted_insert(this);
+            }
+        }
     }
     public Product(String code, String name, double price, String category){
         this.name = name;
         this.price = price;
         this.category = category;
         this.code = new Code(code);
+        if(Main.categories.search(this.category)!=null){
+            if(((Category)Main.categories.search(this.category)).products.search(this.code.get_key())==null){
+                //Hasn't been registered yet.
+                ((Category)Main.categories.search(this.category)).products.sorted_insert(this);
+            }
+        }
     }
     @Override
     public String get_visualization() {

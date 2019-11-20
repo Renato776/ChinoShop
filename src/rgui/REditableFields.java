@@ -1,6 +1,7 @@
 package rgui;
 
 import com.edd.Client;
+import com.edd.Product;
 import com.edd.RData;
 
 import javax.swing.*;
@@ -27,6 +28,9 @@ public class REditableFields extends JPanel {
         if(data.getClass().equals(Client.class)){
             layout.linkSize(fields[0][1],fields[1][1],fields[2][1],fields[3][1]);
             layout.linkSize(fields[0][0],fields[1][0],fields[2][0],fields[3][0]);
+        }else if(data.getClass().equals(Product.class)){
+            layout.linkSize(fields[0][1],fields[1][1],fields[2][1],non_editable_fields[0][1]);
+            layout.linkSize(fields[0][0],fields[1][0],fields[2][0],non_editable_fields[0][0]);
         }
         for (var f: non_editable_fields) {
            horizontalGroup.addGroup(layout.createSequentialGroup()

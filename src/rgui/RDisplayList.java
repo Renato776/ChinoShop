@@ -22,7 +22,7 @@ public class RDisplayList extends JScrollPane {
         this.list = list;
         vessel = wrapper;
     }
-    public static  RDisplayList getInstance(RList l, int w, int h, JPanel context){
+    public static  RDisplayList getInstance(RList l, int w, int h, JPanel context, boolean adjustText){
         JPanel result = new JPanel();
         GroupLayout layout = new GroupLayout(result);
         result.setLayout(layout);
@@ -33,7 +33,7 @@ public class RDisplayList extends JScrollPane {
         var aux = l.head;
         int index = 0;
         while(aux!=null){
-            var element = new RLabel(index,aux.data.get_key(),context,w/15);
+            var element = new RLabel(index,aux.data.get_key(),context,w/15,adjustText);
             element.addMouseListener(new RIcon_Handler());
             horizontalGroup.addComponent(element);
             verticalGroup.addComponent(element);

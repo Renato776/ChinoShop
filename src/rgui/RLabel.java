@@ -18,6 +18,25 @@ public class RLabel extends JLabel{
         this.index = index;
         setOpaque(true);
     }
+
+    public RLabel(int index, String name, JPanel context, int maxChars, boolean adjustText){
+        super();
+        if(adjustText){
+            this.setText(get_formatted_title(name, maxChars));
+            double pf = maxChars*1.5 + 1;
+            int r = (int)pf;
+            this.setFont(new Font ("TimesRoman", Font.PLAIN, r));
+        }else{
+            this.setText(name);
+            this.setFont(new Font ("TimesRoman", Font.PLAIN, 20));
+        }
+
+        this.context = context;
+        //This constructor must be call right after creating a directory icon.
+        this.index = index;
+        setOpaque(true);
+    }
+
     public String get_formatted_title(String title){
 
         if(title.length()>11){

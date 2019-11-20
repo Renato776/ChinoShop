@@ -142,9 +142,9 @@ public class CargarProducto extends JPanel {
         //Alright build the new Product!
         Product product = new Product(c,n,p,selected_category);
         Main.products.sorted_insert(product);
-        var cat = Main.categories.search(selected_category);
-        Category category1 = (Category)cat;
-        category1.products.sorted_insert(product);
+        //var cat = Main.categories.search(selected_category);
+        //Category category1 = (Category)cat;
+        //category1.products.sorted_insert(product);
         Printing.alert("Producto ingresado con exito!");
     }
     public void select_category(String category){

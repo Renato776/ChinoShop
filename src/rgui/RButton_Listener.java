@@ -42,6 +42,11 @@ public class RButton_Listener implements ActionListener {
                 vessel.add(new Login());
                 frame.pack();
                 break;
+            case 103: //GOTO editar producto
+                vessel.remove(0);
+                vessel.add(new EditarProducto());
+                frame.pack();
+                return;
             case 201: //GOTO History
                 vessel.remove(0);
                 vessel.add(new History());
@@ -49,6 +54,7 @@ public class RButton_Listener implements ActionListener {
                 return;
             case 107: //GOTO home
             case 110:
+            case 401:
                 vessel.remove(0);
                 vessel.add(new Home());
                 frame.pack();
@@ -77,6 +83,38 @@ public class RButton_Listener implements ActionListener {
                 vessel.remove(0);
                 vessel.add(new EditarCliente());
                 frame.pack();
+                return;
+            case 301: //Editar Cliente
+                ((EditarCliente)context).edit();
+                return;
+            case 302: //Editar producto
+                ((EditarProducto)context).edit();
+                return;
+            case 400: //GOTO shop
+                vessel.remove(0);
+                vessel.add(new Shop());
+                frame.pack();
+                return;
+            case 403:
+                ((Shop)context).facturar();
+                return;
+            case 404:
+                ((Shop)context).ordenarPorCliente();
+                return;
+            case 405:
+                ((Shop)context).odenarPorPrecioUp();
+                return;
+            case 406:
+                ((Shop)context).ordenarPorPrecioDown();
+                return;
+            case 407:
+                ((Shop)context).filtrarPorPrecio();
+                return;
+            case 408:
+                ((Shop)context).filtrarPorCategoria();
+                return;
+            case 409:
+                ((Shop)context).buscarProducto();
                 return;
 
             default:

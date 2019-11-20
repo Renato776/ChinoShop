@@ -167,6 +167,14 @@ public class CargarCliente extends JPanel {
         client.last_name = last_name.getText();
         client.likes = true_likes;
         Main.clients.sorted_insert(client);
+        for (var c:Likes.getComponents()) {
+            if(c.getClass().equals(JCheckBox.class)){
+                JCheckBox jCheckBox = (JCheckBox)c;
+                if(jCheckBox.isSelected()){
+                    if(client.likes.search(jCheckBox.getText())==null) client.likes.add(Main.categories.search(jCheckBox.getText()));
+                }
+            }
+        }
         Printing.alert("Cliente registrado con exito!");
     }
 }

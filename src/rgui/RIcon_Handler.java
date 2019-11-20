@@ -13,6 +13,8 @@ public class RIcon_Handler  extends MouseAdapter {
             context.setSelectedClient(index);
         }else if(label.context.getClass().equals(EditarProducto.class)){
             ((EditarProducto)label.context).setSelected_product(index);
+        }else if(label.context.getClass().equals(Shop.class)){
+            ((Shop)label.context).setSelected_product(index);
         }
     }
 }

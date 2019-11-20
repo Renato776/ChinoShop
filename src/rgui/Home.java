@@ -12,6 +12,7 @@ public class Home extends JPanel {
     JButton edit_client;
     JButton edit_product;
     JButton back_button;
+    JButton shop_button;
 
     public Home(){
         setBackground(Color.cyan);
@@ -26,13 +27,15 @@ public class Home extends JPanel {
         cargar_product = new RButton("Cargar Producto",100);
         edit_client = new RButton("Editar Cliente",102);
         edit_product = new RButton("Editar Producto",103);
+        shop_button = new RButton("Shop",400);
         back_button = new RButton("Back",104);
         cargar_client.addActionListener(new RButton_Listener(this));
         cargar_product.addActionListener(new RButton_Listener(this));
         edit_product.addActionListener(new RButton_Listener(this));
         edit_client.addActionListener(new RButton_Listener(this));
         back_button.addActionListener(new RButton_Listener(this));
-        layout.linkSize(SwingConstants.HORIZONTAL, cargar_client, cargar_product,edit_client,edit_product);
+        shop_button.addActionListener(new RButton_Listener(this));
+        layout.linkSize(SwingConstants.HORIZONTAL, cargar_client, cargar_product,edit_client,edit_product,shop_button);
         //endregion
 
 //region set Horizontal grouping:
@@ -43,6 +46,7 @@ public class Home extends JPanel {
                         .addComponent(edit_client)
                         .addComponent(cargar_product)
                         .addComponent(edit_product)
+                        .addComponent(shop_button)
                         .addComponent(back_button)
                 )
         );
@@ -55,6 +59,7 @@ public class Home extends JPanel {
                 .addComponent(edit_client)
                 .addComponent(cargar_product)
                 .addComponent(edit_product)
+                .addComponent(shop_button)
                 .addComponent(back_button)
         );
 //endregion

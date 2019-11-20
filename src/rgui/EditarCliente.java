@@ -30,7 +30,7 @@ public class EditarCliente extends JPanel {
         title = new JLabel("Chino Shop");
         clients_text = new JLabel("Clients:");
         detalles_text  = new JLabel("Detalles:");
-        clients = RDisplayList.getInstance(Main.clients,180,500,this);
+        clients = RDisplayList.getInstance(Main.clients,180,500,this,true);
         if(Main.clients.head!=null){
             detalles = new REditableFields(Main.clients.head.data);
         }else{
@@ -38,7 +38,7 @@ public class EditarCliente extends JPanel {
         }
         back_button = new RButton("Back",110);
         back_button.addActionListener(new RButton_Listener(this));
-        edit_button = new RButton("Editar",201);
+        edit_button = new RButton("Editar",301);
         edit_button.addActionListener(new RButton_Listener(this));
         //endregion
 
@@ -91,9 +91,11 @@ public class EditarCliente extends JPanel {
         if(Main.clients.search(new_data[0])==null){
             old_data.name = new_data[0];
         }else{
-           Printing.alert("Ya existe un cliente con este nombre.");
-            Printing.alert("Operacion cancelada");
-            return;
+            if(!old_data.name.equals(new_data[0])){
+                Printing.alert("Ya existe un cliente con este nombre.");
+                Printing.alert("Operacion cancelada");
+                return;
+            }
         }
         old_data.last_name = new_data[1];
         old_data.address = new_data[2];
