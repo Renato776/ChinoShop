@@ -1,7 +1,9 @@
 package rgui;
 
+import com.edd.Client;
 import com.edd.Main;
 
+import javax.sound.midi.SysexMessage;
 import javax.swing.*;
 import java.awt.*;
 
@@ -11,11 +13,14 @@ public class EditarCliente extends JPanel {
     public JLabel title;
     public JLabel clients_text;
     public JLabel detalles_text;
-    public JScrollPane scrollPane;
+    public RDisplayList clients;
     public JPanel aux;
-    public JPanel detalles;
+    public REditableFields detalles;
     public RButton back_button;
+    public RButton edit_button;
+    public int selected_client;
     public EditarCliente(){
+        selected_client = 0;
         GroupLayout layout = new GroupLayout(this);
         this.setLayout(layout);
         layout.setAutoCreateGaps(true);
@@ -25,17 +30,16 @@ public class EditarCliente extends JPanel {
         title = new JLabel("Chino Shop");
         clients_text = new JLabel("Clients:");
         detalles_text  = new JLabel("Detalles:");
-        aux = new JPanel();
-        var head = Main.clients.head;
-        while(head!=null){
-            aux.add(new JLabel(head.data.get_key()));
-            head = head.next;
+        clients = RDisplayList.getInstance(Main.clients,180,500,this);
+        if(Main.clients.head!=null){
+            detalles = new REditableFields(Main.clients.head.data);
+        }else{
+            detalles = new REditableFields();
         }
-        detalles = new JPanel();
-        scrollPane = new JScrollPane(aux);
-        scrollPane.setPreferredSize(new Dimension(600,400));
         back_button = new RButton("Back",110);
         back_button.addActionListener(new RButton_Listener(this));
+        edit_button = new RButton("Editar",201);
+        edit_button.addActionListener(new RButton_Listener(this));
         //endregion
 
         //region set Horizontal grouping:
@@ -45,32 +49,49 @@ public class EditarCliente extends JPanel {
                         .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup()
                                         .addComponent(clients_text)
-                                        .addComponent(scrollPane)
+                                        .addComponent(clients)
                                 )
                                 .addGroup(layout.createParallelGroup()
                                         .addComponent(detalles_text)
                                         .addComponent(detalles)
                                 )
                         )
+                        .addComponent(back_button)
+                        .addComponent(edit_button)
                 )
         );
         //endregion
 
-        //region set Horizontal grouping:
+        //region set Vertical grouping:
         layout.setVerticalGroup(layout.createSequentialGroup()
                 .addComponent(title)
                 .addGroup(layout.createParallelGroup()
                         .addGroup(layout.createSequentialGroup()
                                 .addComponent(clients_text)
-                                .addComponent(scrollPane)
+                                .addComponent(clients)
                         )
                         .addGroup(layout.createSequentialGroup()
                                 .addComponent(detalles_text)
                                 .addComponent(detalles)
                         )
                 )
+                .addComponent(back_button)
+                .addComponent(edit_button)
         );
         //endregion
     }
-
+    public void setSelectedClient(int index){
+        selected_client = index;
+        detalles.replace_data(clients.get_element_data(index));
+        clients.color_element(index);
+    }
+    public void edit(){
+        var new_data = detalles.retrieve_data();
+        Client old_data = (Client) clients.get_element_data(selected_client);
+        old_data.name = new_data[0];
+        old_data.last_name = new_data[1];
+        old_data.address = new_data[2];
+        old_data.NIT = new_data[3];
+        Printing.alert("Cliente editado con exito!");
+    }
 }

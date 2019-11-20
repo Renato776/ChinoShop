@@ -1,5 +1,8 @@
 package com.edd;
 
+import javax.swing.*;
+import java.awt.*;
+
 public class Client extends RData {
     public RList likes;
     public String name;
@@ -51,5 +54,28 @@ public class Client extends RData {
     @Override
     public double numeric_field(int field) {
         return 0;
+    }
+
+    @Override
+    public Component[][] get_editable_fields() {
+        var res =  new Component[4][2];
+        var n = new JLabel("Nombre: ");
+        var nf = new JTextField(name);;
+        var a = new JLabel("Apellido: ");
+        var af = new JTextField(last_name);;
+        var d = new JLabel("Direccion: ");
+        var df = new JTextField(address);;
+        var nit = new JLabel("NIT: ");
+        var nitf = new JTextField(NIT);
+        res[0] = new Component[]{n,nf};
+        res[1] = new Component[]{a,af};
+        res[2] = new Component[]{d,df};
+        res[3] = new Component[]{nit,nitf};
+        return res;
+    }
+
+    @Override
+    public Component[][] get_non_editable_fields() {
+        return new Component[0][];
     }
 }

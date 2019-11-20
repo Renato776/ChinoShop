@@ -2,24 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26a096d0-3c34-4878-b006-30660d225f31" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/rgui/EditarCliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rgui/EditarProducto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rgui/RDisplayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rgui/REditableFields.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rgui/RIcon_Handler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rgui/RLabel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rgui/WrapLayout.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Category.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Code.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Code.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/RData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/RData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Usuario.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/rgui/CargarCliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/rgui/CargarCliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/rgui/CargarProducto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/rgui/CargarProducto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/rgui/Printing.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/rgui/Printing.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/rgui/RButton_Listener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/rgui/RButton_Listener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/rgui/EditarCliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/rgui/EditarCliente.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/edd/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/Category.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/edd/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/edd/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/edd/Code.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/Code.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/edd/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rgui/CargarCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rgui/CargarCliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rgui/CargarProducto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rgui/CargarProducto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rgui/Printing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rgui/Printing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rgui/RButton_Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rgui/RButton_Listener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/edd/RData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/RData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/edd/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rgui/EditarCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rgui/EditarCliente.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +49,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../EDDDrive" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -94,6 +98,10 @@
       <updated>1573970512586</updated>
       <workItem from="1573970516450" duration="11539000" />
       <workItem from="1573983100850" duration="773000" />
+      <workItem from="1574010494962" duration="636000" />
+      <workItem from="1574028012371" duration="131000" />
+      <workItem from="1574208834664" duration="189000" />
+      <workItem from="1574209889426" duration="9418000" />
     </task>
     <servers />
   </component>
@@ -115,5 +123,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/rgui/RDisplayList.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,5 +1,7 @@
 package com.edd;
 
+import java.awt.*;
+
 public class Category extends RData {
     public String name;
     public RList products;
@@ -42,5 +44,15 @@ public class Category extends RData {
     @Override
     public double numeric_field(int field) {
         return field;
+    }
+
+    @Override
+    public Component[][] get_editable_fields() {
+        return new Component[0][];
+    }
+
+    @Override
+    public Component[][] get_non_editable_fields() {
+        return new Component[0][];
     }
 }

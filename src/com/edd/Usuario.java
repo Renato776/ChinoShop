@@ -1,5 +1,7 @@
 package com.edd;
 
+import java.awt.*;
+
 public class Usuario extends RData {
     public RList history;
     public String name;
@@ -30,6 +32,16 @@ public class Usuario extends RData {
     @Override
     public double numeric_field(int field) {
         return field;
+    }
+
+    @Override
+    public Component[][] get_editable_fields() {
+        return new Component[0][];
+    }
+
+    @Override
+    public Component[][] get_non_editable_fields() {
+        return new Component[0][];
     }
 
     @Override

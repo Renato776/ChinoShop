@@ -1,5 +1,8 @@
 package com.edd;
 
+import javax.swing.*;
+import java.awt.*;
+
 public class Product extends RData {
     public Code code;
     public String name;
@@ -50,4 +53,23 @@ public class Product extends RData {
     public double numeric_field(int field) {
         return price;
     }
+
+    @Override
+    public Component[][] get_editable_fields() {
+        var res =  new Component[3][2];
+        res[0] = new Component[]{new JLabel("Nombre: "),new JTextField(name)};
+        res[1] = new Component[]{new JLabel("Categoria: "),new JTextField(category)};
+        res[2] = new Component[]{new JLabel("Precio: "),new JTextField(""+this.price)};
+        return res;
+    }
+
+    @Override
+    public Component[][] get_non_editable_fields() {
+        var res =  new Component[1][2];
+        var t = new JTextField(code.get_key());
+        t.setEditable(false);
+        res[0] = new Component[]{new JLabel("Codigo: "),t};
+        return res;
+    }
+
 }
