@@ -28,7 +28,7 @@ public class Login extends JPanel {
         layout.setAutoCreateContainerGaps(true);
 
         //region Declaration of components to use
-        title = new JLabel("EDD Drive");
+        title = new JLabel("Chino Shop");
         user_name_text = new JLabel("Username: ");
         password_text = new JLabel("Password: ");
         user_name = new JTextField();

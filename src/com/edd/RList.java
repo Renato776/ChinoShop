@@ -2,6 +2,8 @@ package com.edd;
 
 import rgui.Printing;
 
+import javax.swing.*;
+
 public class RList {
     public Node head;
     public Node tail;
@@ -300,5 +302,29 @@ public class RList {
         }
         this.head = res.head;
         this.tail = res.tail;
+    }
+
+    public JLabel report(String name){
+        var list_to_report = this;
+        var aux = list_to_report.head;
+        var resultado = "digraph foo { rankdir=TB; node [shape=record];"+"\n";
+        int c = 0;
+        while(aux != null){
+            resultado = resultado + "s"+c +"[label=\" "+aux.data.get_visualization_as_node()+"\"];"+"\n";
+            if(aux.next != null){
+                resultado = resultado + "s"+c+" -> s"+(c+1)+" [arrowhead=vee, tailclip=false, arrowtail = vee];"+"\n";
+            }
+            else{
+                // resultado = resultado + "s"+(list_to_report.get_size()-1)+" -> n2      [arrowhead=vee, tailclip=false,arrowtail = vee];" + "\n";
+            }
+            c += 1;
+            aux = aux.next;
+        }
+        resultado = resultado +"}";
+        System.out.println("Dot code to graph: ");
+        System.out.println(resultado);
+        Printing.print_archive(name+".dot",resultado);
+        JLabel report = Printing.compile_image_dot(name);
+        return report;
     }
 }

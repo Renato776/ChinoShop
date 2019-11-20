@@ -1,0 +1,11 @@
+digraph foo { rankdir=TB; node [shape=record];
+s0[label=" Name: Renato; Pass: Flores"];
+s0 -> s1 [arrowhead=vee, tailclip=false, arrowtail = vee];
+s1[label=" Name: Javi; Pass: Flores"];
+s1 -> s2 [arrowhead=vee, tailclip=false, arrowtail = vee];
+s2[label=" Name: Alex; Pass: Flores"];
+s2 -> s3 [arrowhead=vee, tailclip=false, arrowtail = vee];
+s3[label=" Name: Alejandra; Pass: Gomez"];
+s3 -> s4 [arrowhead=vee, tailclip=false, arrowtail = vee];
+s4[label=" Name: admin; Pass: admin"];
+}

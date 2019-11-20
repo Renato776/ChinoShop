@@ -58,7 +58,7 @@ public class Shop extends JPanel {
         layout.linkSize(SwingConstants.HORIZONTAL, ordenar_por_cliente, buscar_producto);
         layout.linkSize(SwingConstants.HORIZONTAL, back_button, facturar_button);
 
-        display_title = new JLabel("Codigo:         Nombre:         Categoria:          Precio:");
+        display_title = new JLabel("<html><table style=\"width:800px\"><tr><td>"+"Codigo"+"</td><td>"+"Nombre"+"</td><td>"+"Precio"+"</td><td>"+"Categoria"+"</td></tr></table><html>");
         display = RDisplayList.getInstance(Main.products.to_visual(),800,400,this,false);
         //endregion
 

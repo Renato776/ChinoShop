@@ -80,4 +80,9 @@ public class Client extends RData {
     public Component[][] get_non_editable_fields() {
         return new Component[0][];
     }
+
+    @Override
+    public String get_visualization_as_node() {
+        return "Nombre: "+name+"\\n"+" Apellido: "+last_name+" \\n Direccion: "+address+"\\n NIT: "+NIT;
+    }
 }

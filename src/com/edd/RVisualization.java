@@ -42,4 +42,9 @@ public class RVisualization extends  RData{
     public Component[][] get_non_editable_fields() {
         return new Component[0][];
     }
+
+    @Override
+    public String get_visualization_as_node() {
+        return content;
+    }
 }

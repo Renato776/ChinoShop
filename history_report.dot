@@ -1,0 +1,15 @@
+digraph foo { rankdir=TB; node [shape=record];
+s0[label=" Higiene"];
+s0 -> s1 [arrowhead=vee, tailclip=false, arrowtail = vee];
+s1[label=" Dulces"];
+s1 -> s2 [arrowhead=vee, tailclip=false, arrowtail = vee];
+s2[label=" Alcohol"];
+s2 -> s3 [arrowhead=vee, tailclip=false, arrowtail = vee];
+s3[label=" Cigarros"];
+s3 -> s4 [arrowhead=vee, tailclip=false, arrowtail = vee];
+s4[label=" Chucherias"];
+s4 -> s5 [arrowhead=vee, tailclip=false, arrowtail = vee];
+s5[label=" Panes"];
+s5 -> s6 [arrowhead=vee, tailclip=false, arrowtail = vee];
+s6[label=" otros"];
+}

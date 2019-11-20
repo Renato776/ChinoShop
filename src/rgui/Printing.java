@@ -85,6 +85,25 @@ public class Printing {
         return "dot "+file_name+".dot -Tpng -o "+file_name+".png";
     }
 
+    public static String  get_formatted_text(String title, int maxChars){
+
+        if(title.length()>maxChars){
+            String res = "";
+            char[] l = title.toCharArray();
+            int i = 0;
+            int ii = 0;
+            for (char c: l
+            ) {
+                i++;
+                res+=c;
+                if(i%maxChars==0&&ii!=(l.length-1)){
+                    res+="-<br>";
+                }
+                ii++;
+            }
+            return res;
+        }else return title;
+    }
     public static JLabel compile_image_neato(String file_name){
         //processBuilder.command("neato", file_name+".neato","-Tpng","-o", file_name+".png");
         try{
@@ -109,7 +128,7 @@ public class Printing {
         //processBuilder.command("neato", file_name+".neato","-Tpng","-o", file_name+".png");
         try{
             Process p = Runtime.getRuntime().exec(get_dot_command(file_name));
-            Thread.currentThread().sleep(10000);
+            Thread.currentThread().sleep(4000);
         }catch (Exception ex){
             Printing.alert("An error occurred while trying to compile the dot code: "+ex.toString());
         }
@@ -118,7 +137,6 @@ public class Printing {
         JLabel res = new JLabel();
         ImageIcon icon = new ImageIcon(file_name+".png");
         res.setIcon(icon);
-
         return res;
     }
 }

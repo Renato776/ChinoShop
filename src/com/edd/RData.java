@@ -10,4 +10,5 @@ public abstract class  RData {
     public abstract double numeric_field(int field);
     public abstract Component[][] get_editable_fields();
     public abstract Component[][] get_non_editable_fields();
+    public abstract String get_visualization_as_node();
 }

@@ -45,6 +45,11 @@ public class Usuario extends RData {
     }
 
     @Override
+    public String get_visualization_as_node() {
+        return get_visualization();
+    }
+
+    @Override
     public String get_visualization() {
         return "Name: "+name+"; Pass: "+password;
     }

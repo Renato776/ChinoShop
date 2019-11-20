@@ -55,6 +55,7 @@ public class RButton_Listener implements ActionListener {
             case 107: //GOTO home
             case 110:
             case 401:
+            case 700:
                 vessel.remove(0);
                 vessel.add(new Home());
                 frame.pack();
@@ -122,6 +123,30 @@ public class RButton_Listener implements ActionListener {
                 vessel.remove(0);
                 vessel.add(new History());
                 frame.pack();
+            case 601: //Users report
+                JLabel report = Main.usuarios.report("Usuarios");
+                vessel.remove(0);
+                vessel.add(new Report_Display(report));
+                frame.pack();
+                return;
+            case 602: //Products report
+                JLabel report1 = Main.products.report("Productos");
+                vessel.remove(0);
+                vessel.add(new Report_Display(report1));
+                frame.pack();
+                return;
+            case 603: //Categories report
+                JLabel report2 = Main.categories.report("Categorias");
+                vessel.remove(0);
+                vessel.add(new Report_Display(report2));
+                frame.pack();
+                return;
+            case 604: //Clients report
+                JLabel report3 = Main.clients.report("Clientes");
+                vessel.remove(0);
+                vessel.add(new Report_Display(report3));
+                frame.pack();
+                return;
             default:
                 System.out.println("Not sure, which action was pressed...");
         }

@@ -1,0 +1,13 @@
+digraph foo { rankdir=TB; node [shape=record];
+s0[label=" Codigo: P1 \n Nombre: cerveza"];
+s0 -> s1 [arrowhead=vee, tailclip=false, arrowtail = vee];
+s1[label=" Codigo: P2 \n Nombre: Chicle"];
+s1 -> s2 [arrowhead=vee, tailclip=false, arrowtail = vee];
+s2[label=" Codigo: P3 \n Nombre: Bonbon"];
+s2 -> s3 [arrowhead=vee, tailclip=false, arrowtail = vee];
+s3[label=" Codigo: P4 \n Nombre: Chocolate"];
+s3 -> s4 [arrowhead=vee, tailclip=false, arrowtail = vee];
+s4[label=" Codigo: P5 \n Nombre: Pan con mantequilla"];
+s4 -> s5 [arrowhead=vee, tailclip=false, arrowtail = vee];
+s5[label=" Codigo: P6 \n Nombre: Papel higienico"];
+}

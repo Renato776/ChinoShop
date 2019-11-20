@@ -1,0 +1,15 @@
+digraph foo { rankdir=TB; node [shape=record];
+s0[label=" Nombre: Kayle\n Apellido:  \n Direccion: \n NIT: "];
+s0 -> s1 [arrowhead=vee, tailclip=false, arrowtail = vee];
+s1[label=" Nombre: Morgana\n Apellido:  \n Direccion: \n NIT: "];
+s1 -> s2 [arrowhead=vee, tailclip=false, arrowtail = vee];
+s2[label=" Nombre: Syndra\n Apellido:  \n Direccion: \n NIT: "];
+s2 -> s3 [arrowhead=vee, tailclip=false, arrowtail = vee];
+s3[label=" Nombre: Lissandra\n Apellido:  \n Direccion: \n NIT: "];
+s3 -> s4 [arrowhead=vee, tailclip=false, arrowtail = vee];
+s4[label=" Nombre: Lulu\n Apellido:  \n Direccion: \n NIT: "];
+s4 -> s5 [arrowhead=vee, tailclip=false, arrowtail = vee];
+s5[label=" Nombre: Karma\n Apellido:  \n Direccion: \n NIT: "];
+s5 -> s6 [arrowhead=vee, tailclip=false, arrowtail = vee];
+s6[label=" Nombre: Irelia\n Apellido:  \n Direccion: \n NIT: "];
+}

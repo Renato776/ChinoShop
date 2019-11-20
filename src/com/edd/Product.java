@@ -1,5 +1,7 @@
 package com.edd;
 
+import rgui.Printing;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -46,7 +48,10 @@ public class Product extends RData {
     }
     @Override
     public String get_visualization() {
-        return "Codigo: "+code.get_key()+" Nombre: "+name+" Precio: "+price+" Categoria: "+category;
+        //style = "width: 500px;//style="width:700px">
+        //return "Codigo: "+code.get_key()+" Nombre: "+name+" Precio: "+price+" Categoria: "+category;
+        return "<html><table style=\"width:800px\"><tr><td>"+ Printing.get_formatted_text(code.get_key(),10)+"</td><td>"+Printing.get_formatted_text(name,10)
+                +"</td><td>"+Printing.get_formatted_text(""+price,10)+"</td><td>"+Printing.get_formatted_text(category,10)+"</td></tr></table><html>";
     }
 
     @Override
@@ -89,6 +94,11 @@ public class Product extends RData {
         t.setEditable(false);
         res[0] = new Component[]{new JLabel("Codigo: "),t};
         return res;
+    }
+
+    @Override
+    public String get_visualization_as_node() {
+        return "Codigo: "+code.get_key()+" \\n Nombre: "+name;
     }
 
 }

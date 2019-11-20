@@ -27,7 +27,7 @@ public class Report_Display extends JPanel {
         aux.add(content);
         scrollPane = new JScrollPane(aux);
         scrollPane.setPreferredSize(new Dimension(600,400));
-        back_button = new RButton("Back",6);
+        back_button = new RButton("Back",700);
         back_button.addActionListener(new RButton_Listener(this));
         //endregion
 
