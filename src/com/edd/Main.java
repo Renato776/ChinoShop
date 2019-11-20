@@ -51,7 +51,7 @@ public class Main {
     }
     public static void main(String[] args) {
 	// write your code here
-        load_sample_data();
+        //load_sample_data();
     Usuario admin = new Usuario("admin","admin");
         usuarios.add(admin);
         new Category("otros");

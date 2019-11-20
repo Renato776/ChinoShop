@@ -17,6 +17,7 @@ public class Home extends JPanel {
     JButton productos_report;
     JButton categories_report;
     JButton clients_report;
+    JButton master_report;
 
     public Home(){
         setBackground(Color.cyan);
@@ -38,6 +39,8 @@ public class Home extends JPanel {
         productos_report = new RButton("Reporte de Productos",602);
         categories_report = new RButton("Reporte de Categorias",603);
         clients_report = new RButton("Reporte de Clientes",604);
+        master_report = new RButton("Master Report",605);
+        master_report.addActionListener(new RButton_Listener(this));
         usuarios_report.addActionListener(new RButton_Listener(this));
         productos_report.addActionListener(new RButton_Listener(this));
         categories_report.addActionListener(new RButton_Listener(this));
@@ -48,7 +51,7 @@ public class Home extends JPanel {
         edit_client.addActionListener(new RButton_Listener(this));
         back_button.addActionListener(new RButton_Listener(this));
         shop_button.addActionListener(new RButton_Listener(this));
-        layout.linkSize(SwingConstants.HORIZONTAL, cargar_client, cargar_product,edit_client,edit_product,shop_button,usuarios_report,productos_report,categories_report,clients_report);
+        layout.linkSize(SwingConstants.HORIZONTAL, cargar_client, cargar_product,edit_client,edit_product,shop_button,master_report,usuarios_report);
         //endregion
 
 //region set Horizontal grouping:
@@ -60,9 +63,10 @@ public class Home extends JPanel {
                         .addComponent(cargar_product)
                         .addComponent(edit_product)
                         .addComponent(usuarios_report)
-                        .addComponent(productos_report)
-                        .addComponent(categories_report)
-                        .addComponent(clients_report)
+                        //.addComponent(productos_report)
+                        //.addComponent(categories_report)
+                        //.addComponent(clients_report)
+                        .addComponent(master_report)
                         .addComponent(shop_button)
                         .addComponent(back_button)
                 )
@@ -77,9 +81,10 @@ public class Home extends JPanel {
                 .addComponent(cargar_product)
                 .addComponent(edit_product)
                 .addComponent(usuarios_report)
-                .addComponent(productos_report)
-                .addComponent(categories_report)
-                .addComponent(clients_report)
+                //.addComponent(productos_report)
+                //.addComponent(categories_report)
+                //.addComponent(clients_report)
+                .addComponent(master_report)
                 .addComponent(shop_button)
                 .addComponent(back_button)
         );

@@ -13,7 +13,7 @@ public class Client extends RData {
 
     public Client(String name){
         this.name = name;
-        likes = null;
+        likes = new RList();
         last_name = "";
         address = "";
         NIT = "";

@@ -204,7 +204,7 @@ public class Shop extends JPanel {
         if(data == null)return;
         if(Main.clients.search(data[2])==null){
             Printing.alert("Cliente no encontrado: "+data[1]);
-            Printing.alert("Se registrara la compra anonima.");
+            return;
         }
         Client customer = (Client)Main.clients.search(data[2]);
         if(Main.products.search(data[0])==null){

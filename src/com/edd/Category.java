@@ -55,7 +55,20 @@ public class Category extends RData {
     public Component[][] get_non_editable_fields() {
         return new Component[0][];
     }
-
+    public String get_matrix_node_info(){
+        if(this.products.get_size()==0)return "-";
+        if(this.products.get_size()==1){
+            return this.products.head.data.get_visualization_as_node();
+        }
+        var aux = this.products.head.next;
+        String res = "{"+products.head.data.get_visualization_as_node();
+        while(aux!=null){
+            res+="|"+aux.data.get_visualization_as_node();
+            aux = aux.next;
+        }
+        res+="}";
+        return res;
+    }
     @Override
     public String get_visualization_as_node() {
         return name;

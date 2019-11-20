@@ -1,6 +1,6 @@
 package rgui;
 
-import com.edd.Main;
+import com.edd.*;
 
 import javax.swing.*;
 import java.awt.*;
@@ -147,8 +147,61 @@ public class RButton_Listener implements ActionListener {
                 vessel.add(new Report_Display(report3));
                 frame.pack();
                 return;
+            case 605: //Master report:
+                JLabel report4 = get_matrix_report();
+                vessel.remove(0);
+                vessel.add(new Report_Display(report4));
+                frame.pack();
+                return;
             default:
                 System.out.println("Not sure, which action was pressed...");
         }
+    }
+    public JLabel get_matrix_report(){
+        Printing.print_archive("matrix.neato", Matrix_Node.get_matrix_graph(get_matrix()));
+        JLabel report = Printing.compile_image_neato("matrix");
+        return report;
+    }
+
+    public String[][] get_matrix(){
+        String[][] res = new String[Main.clients.get_size()+1][Main.categories.get_size()+1];
+        res[0][0] = "Matrix";
+        //Fill the first row as header:
+        int i = 0;
+        while(i<Main.categories.get_size()){
+            res[0][i+1] = Main.categories.get(i).data.get_key();
+            i++;
+        }
+        //Alright, now fill  the next rows.
+        i = 0;
+        while(i<Main.clients.get_size()){
+            //Set the title of the row:
+            res[i+1][0] = Main.clients.get(i).data.get_key();
+            //Get the rest of the row:
+            var row = get_row((Client)Main.clients.get(i).data);
+
+            //Copy the values from row to the matrix:
+            int ii = 0;
+            while(ii<row.length){
+                res[i+1][ii+1] = row[ii];
+                ii++;
+            }
+            i++;
+        }
+        return res;
+    }
+
+    public String[] get_row(Client client){
+        String[] res = new String[Main.categories.get_size()];
+        int i = 0;
+        while(i<Main.categories.get_size()){
+            if(client.likes.search(Main.categories.get(i).data.get_key())==null){
+                res[i] = "0";
+            }else{
+                res[i] = ((Category)Main.categories.get(i).data).get_matrix_node_info();
+            }
+            i++;
+        }
+        return res;
     }
 }

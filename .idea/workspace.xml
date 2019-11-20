@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="26a096d0-3c34-4878-b006-30660d225f31" name="Default Changelist" comment="" />
+    <list default="true" id="26a096d0-3c34-4878-b006-30660d225f31" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/matrix.neato" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/matrix.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/edd/Matrix_Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/rgui/Home.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/rgui/Home.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/rgui/RButton_Listener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/rgui/RButton_Listener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/edd/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/edd/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/edd/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rgui/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rgui/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rgui/RButton_Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rgui/RButton_Listener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rgui/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rgui/Shop.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +94,7 @@
       <workItem from="1574028012371" duration="131000" />
       <workItem from="1574208834664" duration="189000" />
       <workItem from="1574209889426" duration="24599000" />
+      <workItem from="1574245395874" duration="3857000" />
     </task>
     <servers />
   </component>
@@ -105,14 +121,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/rgui/CargarCliente.java</url>
-          <line>173</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/rgui/Shop.java</url>
           <line>242</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/edd/Matrix_Node.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
