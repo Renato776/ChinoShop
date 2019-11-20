@@ -2,28 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26a096d0-3c34-4878-b006-30660d225f31" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/rgui/EditarProducto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rgui/RDisplayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rgui/REditableFields.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rgui/RIcon_Handler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rgui/RLabel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rgui/WrapLayout.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Code.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Code.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/RData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/RData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Usuario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/rgui/CargarCliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/rgui/CargarCliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/rgui/EditarCliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/rgui/EditarCliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/edd/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/edd/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/edd/Code.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/Code.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/edd/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/edd/RData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/RData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/edd/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/Usuario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rgui/EditarCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rgui/EditarCliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rgui/EditarProducto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rgui/EditarProducto.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +82,7 @@
       <workItem from="1574010494962" duration="636000" />
       <workItem from="1574028012371" duration="131000" />
       <workItem from="1574208834664" duration="189000" />
-      <workItem from="1574209889426" duration="9418000" />
+      <workItem from="1574209889426" duration="10191000" />
     </task>
     <servers />
   </component>

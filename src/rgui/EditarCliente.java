@@ -88,7 +88,13 @@ public class EditarCliente extends JPanel {
     public void edit(){
         var new_data = detalles.retrieve_data();
         Client old_data = (Client) clients.get_element_data(selected_client);
-        old_data.name = new_data[0];
+        if(Main.clients.search(new_data[0])==null){
+            old_data.name = new_data[0];
+        }else{
+           Printing.alert("Ya existe un cliente con este nombre.");
+            Printing.alert("Operacion cancelada");
+            return;
+        }
         old_data.last_name = new_data[1];
         old_data.address = new_data[2];
         old_data.NIT = new_data[3];
