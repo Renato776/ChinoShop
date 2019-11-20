@@ -1,37 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="26a096d0-3c34-4878-b006-30660d225f31" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/history_report.dot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/history_report.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Code.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Code.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/RData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/RData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/RList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/RList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/RVisualization.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/RVisualization.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/com/edd/Usuario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/rgui/Home.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/rgui/Home.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/rgui/Printing.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/rgui/Printing.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/rgui/RButton_Listener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/rgui/RButton_Listener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/rgui/Report_Display.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/rgui/Report_Display.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChinoShop/rgui/Shop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChinoShop/rgui/Shop.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/edd/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/edd/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/edd/Code.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/Code.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/edd/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/edd/RData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/RData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/edd/RList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/RList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/edd/RVisualization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/RVisualization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/edd/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edd/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rgui/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rgui/Home.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rgui/Printing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rgui/Printing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rgui/RButton_Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rgui/RButton_Listener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rgui/Report_Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rgui/Report_Display.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rgui/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rgui/Shop.java" afterDir="false" />
-    </list>
+    <list default="true" id="26a096d0-3c34-4878-b006-30660d225f31" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +78,7 @@
       <workItem from="1574010494962" duration="636000" />
       <workItem from="1574028012371" duration="131000" />
       <workItem from="1574208834664" duration="189000" />
-      <workItem from="1574209889426" duration="24427000" />
+      <workItem from="1574209889426" duration="24599000" />
     </task>
     <servers />
   </component>
